@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 40px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 450px; 
+    width: 95%; 
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box; 
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    border-radius: 80%;
+    object-fit: cover;
+    border: 6px solid #ff0000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-family: 'Oswald', 'Arial Black', Gadget, Arial, sans-serif; /* Prioriza Oswald, depois Arial Black */
+    font-size: 2.8em;
+    color: #000000;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-bottom: 35px;
+    gap: 15px; 
+}
+
+.btn {
+    background-color: #ffa806e0;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 0; 
+    min-width: 150px; 
+    box-sizing: border-box; 
+}
+
+.btn:hover {
+    background-color: #ac7104e0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: nowrap; 
+    gap: 15px; 
+}
+
+.icon-item {
+    text-align: center;
+    box-sizing: border-box; 
+    min-width: 80px; 
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    height: 3em;
+    width: 3em;
+    text-decoration: none;
+    margin: 0 auto 8px auto;
+}
+
+.contact-custom-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover .contact-custom-icon {
+    transform: scale(1.1);
+}
+
+.icon-item span {
+    font-size: 1em;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    display: block;
+    width: 100%;
+    white-space: nowrap; 
+}
+
+.menu-button {
+    margin-bottom: 45px;
+    display: flex; 
+    justify-content: center; 
+}
+
+.large-btn {
+    width: 90%;
+    padding: 18px 35px;
+    font-size: 1.4em;
+    background-color: #ffa806e0;
+    border-radius: 35px;
+    text-decoration: none;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.large-btn:hover {
+    background-color: #ac7104e0;
+}
+
+.carousel-header {
+    background-color: #ffa806e0;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-header h2 {
+    font-family: 'Arial', cursive;
+    font-size: 1.8em;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.small-btn {
+    background-color: #ffa806e0;
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.small-btn:hover {
+    background-color: #ac7104e0;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ESTILOS DO CARROSSEL AJUSTADOS */
+.carousel-container {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%; /* Proporção 16:9 - Ajuste isso se suas imagens não forem 16:9 */
+    margin-bottom: 45px;
+    border-radius: 0 0 15px 15px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff; /* Fundo branco para caso a imagem não preencha tudo */
+    overflow: hidden; 
+}
+
+.carousel-image {
+    display: block; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    transform: scale(1.001); /* Pequeno zoom para evitar faixas brancas de arredondamento */
+}
+
+.carousel-image.active {
+    opacity: 1; 
+}
+
+
+.wifi-info {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #000000;
+    text-align: center; /* Centraliza o QR Code e o texto */
+}
+
+.qr-code {
+    width: 100px; /* Diminui o tamanho */
+    height: 100px; /* Diminui o tamanho */
+    margin-bottom: 12px; /* Reduz um pouco a margem inferior */
+    border: 4px solid #f0f0f0;
+    border-radius: 5px; /* Adiciona bordas levemente arredondadas */
+}
+
+/* Alterações para o estilo da senha do Wi-Fi */
+.wifi-info p {
+    margin: 5px 0; /* Reduz um pouco a margem superior e inferior */
+    font-size: 1em; /* Reduz o tamanho da fonte para combinar com o texto abaixo */
+    color: #000000;
+    line-height: 1.4; /* Reduz um pouco a altura da linha */
+    font-weight: normal; /* Deixa o peso da fonte normal para não destacar demais */
+    text-shadow: none; /* Remove a sombra do texto */
+}
+
+.wifi-label {
+    font-weight: bold; /* Deixa o "Senha:" em negrito para destacar */
+}
+
+.wifi-value {
+    cursor: pointer; /* Indica que é clicável */
+    display: inline-block; /* Permite hover e padding */
+    padding: 3px 6px; /* Reduz o padding */
+    border-radius: 3px; /* Arredondamento menor para combinar */
+    transition: background-color 0.2s ease;
+}
+
+.wifi-value:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Leve destaque ao passar o mouse */
+}
+
+/* NOVO: Estilo para a instrução "clique na senha para copiar" */
+.copy-instruction {
+    font-size: 0.75em; /* Texto ainda menor e mais discreto */
+    color: #777; /* Cor ainda mais suave */
+    display: block; /* Garante que fique em uma nova linha */
+    margin-top: 3px; /* Reduz a margem superior */
+    transition: color 0.3s ease; /* Para o feedback "Copiado!" */
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 480px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    position: relative;
+    text-align: center;
+}
+
+.close-button {
+    color: #666;
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+}
+
+.modal-content h2 {
+    color: #4A2B00; /* Revertido para #4A2B00 como estava antes */
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.pix-qr-code {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #FFCC00;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pix-key {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    background-color: #FFFDD0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px dashed #FFD700;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.copy-pix-btn {
+    background-color: #007bff;
+    font-size: 1.1em;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.copy-pix-btn:hover {
+    background-color: #0056b3;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE EM TELAS MENORES - AJUSTADAS */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+        max-width: 95%; 
+    }
+
+    .header h1 {
+        font-size: 2em; 
+    }
+
+    .action-buttons {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 10px; 
+    }
+
+    .btn {
+        padding: 12px 15px; 
+        font-size: 1em; 
+        min-width: 120px; 
+    }
+
+    .contact-icons {
+        gap: 10px; 
+        padding: 0 5px; 
+        box-sizing: border-box;
+    }
+
+    .icon-item {
+        min-width: unset; 
+        width: calc(100% / 3); 
+        flex-shrink: 0; 
+        flex-grow: 1; 
+        padding: 0 2px; 
+    }
+
+    .icon-link {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    .contact-custom-icon {
+        width: 45px; 
+        height: 45px; 
+    }
+
+    .icon-item span {
+        font-size: 0.9em; 
+    }
+
+    .large-btn {
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 1.2em;
+    }
+
+    .carousel-header {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .carousel-header h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+    .small-btn {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .carousel-container {
+        padding-top: 75%; /* Proporção 4:3 para mobile. Ajuste se necessário. */
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+
+    .pix-qr-code {
+        width: 150px;
+        height: 150px;
+    }
+}
