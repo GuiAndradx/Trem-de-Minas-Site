@@ -88,11 +88,11 @@ END:VCARD`;
         'imagem1.jpeg',
         'imagem2.jpeg',
         'imagem3.jpeg',
-        'imagem4.jpeg'
+        'imagem4.jpeg',
         'imagem5.jpeg',
         'imagem6.jpeg',
         'imagem7.jpeg',
-        'imagem8.jpeg'
+        'imagem8.jpeg',
         'imagem9.jpeg',
         'imagem10.jpeg',
         'imagem11.jpeg',
