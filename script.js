@@ -47,7 +47,7 @@ END:VCARD`;
                     URL.revokeObjectURL(url);
                 } else if (contactType === 'fornecedor') {
                     const supplierContactName = "Trem Bão de Minas - Administrativo";
-                    const supplierPhoneNumber = "2135932039"; // Telefone para fornecedores
+                    const supplierPhoneNumber = "2136932039"; // Telefone para fornecedores
                     const supplierEmail = "trembaodeminaspbi@gmail.com"; // Email para fornecedores
 
                     const vcardContent = `BEGIN:VCARD
