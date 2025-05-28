@@ -317,7 +317,7 @@ body {
 }
 
 .modal-content h2 {
-    color: #4A2B00; /* Revertido para #4A2B00 como estava antes */
+    color: #4A2B00; 
     font-size: 2em;
     margin-bottom: 25px;
 }
@@ -354,6 +354,43 @@ body {
     background-color: #0056b3;
 }
 
+/* New styles for contact and rate option buttons */
+.contact-option-btn,
+.rate-option-btn {
+    display: block; /* Each button on its own line */
+    width: 80%; /* Adjust width as needed */
+    margin: 15px auto; /* Center buttons with vertical spacing */
+    padding: 15px 20px;
+    font-size: 1.1em;
+}
+
+/* Store Addresses Section */
+.store-addresses {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #000000;
+    text-align: center;
+    color: #000000;
+}
+
+.store-addresses h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.store-addresses p {
+    margin: 8px 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+.store-addresses strong {
+    color: #555;
+}
+
 /* MEDIA QUERIES PARA RESPONSIVIDADE EM TELAS MENORES - AJUSTADAS */
 @media (max-width: 600px) {
     .container {
@@ -366,7 +403,7 @@ body {
     }
 
     .action-buttons {
-        flex-direction: row; 
+        flex-direction: column; /* Stack buttons vertically on small screens */
         justify-content: center;
         gap: 10px; 
     }
@@ -374,7 +411,8 @@ body {
     .btn {
         padding: 12px 15px; 
         font-size: 1em; 
-        min-width: 120px; 
+        min-width: unset; /* Remove min-width to allow full width */
+        width: 100%; /* Make buttons full width */
     }
 
     .contact-icons {
@@ -439,5 +477,20 @@ body {
     .pix-qr-code {
         width: 150px;
         height: 150px;
+    }
+
+    .contact-option-btn,
+    .rate-option-btn {
+        width: 90%; /* Adjust button width for smaller screens */
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+    
+    .store-addresses h3 {
+        font-size: 1.5em;
+    }
+
+    .store-addresses p {
+        font-size: 0.95em;
     }
 }
