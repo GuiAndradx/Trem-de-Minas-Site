@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const contactType = e.target.dataset.contactType;
                 if (contactType === 'loja') {
                     const contactName = "Trem Bão de Minas - Paracambi";
-                    const phoneNumber = "5521977997625";
+                    const phoneNumber = "21977997625";
                     const emailAddress = "trembaodeminaspbi@gmail.com";
                     const website = "https://guiandradx.github.io/Trem-de-Minas-Site/";
                     const menuPdfUrl = "hhttps://guiandradx.github.io/Trem-de-Minas-Site/cardapio.pdf";
@@ -47,7 +47,7 @@ END:VCARD`;
                     URL.revokeObjectURL(url);
                 } else if (contactType === 'fornecedor') {
                     const supplierContactName = "Trem Bão de Minas - Fornecedores";
-                    const supplierPhoneNumber = "552135932039"; // Telefone para fornecedores
+                    const supplierPhoneNumber = "2135932039"; // Telefone para fornecedores
                     const supplierEmail = "trembaodeminaspbi@gmail.com"; // Email para fornecedores
 
                     const vcardContent = `BEGIN:VCARD
@@ -73,7 +73,7 @@ END:VCARD`;
                 // Lógica para o botão "Loja Miguel Pereira" com informações completas
                 else if (contactType === 'miguelpereira') {
                     const miguelPereiraContactName = "Trem Bão de Minas - Miguel Pereira";
-                    const miguelPereiraPhoneNumber = "5524981443402"; // Substitua pelo telefone REAL da loja de Miguel Pereira
+                    const miguelPereiraPhoneNumber = "24981443402"; // Substitua pelo telefone REAL da loja de Miguel Pereira
                     const miguelPereiraEmailAddress = "trembaodeminaspbi@gmail.com"; // Substitua pelo e-mail REAL da loja de Miguel Pereira
                     const miguelPereiraWebsite = "https://guiandradx.github.io/Trem-de-Minas-Site/"; // Substitua pelo site REAL da loja de Miguel Pereira (se houver um diferente)
                     const miguelPereiraMenuPdfUrl = "https://guiandradx.github.io/Trem-de-Minas-Site/cardapio.pdf"; // Substitua pelo link REAL do cardápio de Miguel Pereira
